@@ -11,6 +11,7 @@ Preencha os campos abaixo quando os links existirem.
 | Simulação no Wokwi |  |
 | Dashboard hospedado na Vercel | [`Link do Site do MobiBus na Vercel`](https://mobi-bus-gs.vercel.app/) |
 | Vídeo no YouTube | [`Link do Video no Youtube`](https://youtu.be/duI55tUqWwA) |
+| Repositório do firmware (este projeto) | [`Repositório MobiBus-Edge`](https://github.com/felippetuma/MobiBus-Edge) |
 | Repositório do dashboard | [`Repositório do projeto MobiBus`](https://github.com/felippetuma/MobiBus-GS) |
 | FIWARE original (professor Fabio Cabrini), só como referência | <https://github.com/fabiocabrini/fiware> |
 

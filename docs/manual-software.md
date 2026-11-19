@@ -30,8 +30,8 @@ A stack está na pasta `fiware/` deste repositório: `docker-compose.yml`, `mosq
 ```bash
 sudo apt update
 sudo apt install docker.io docker-compose
-git clone <URL_DO_REPOSITORIO_DO_FIRMWARE>
-cd <PASTA_DO_REPOSITORIO>/fiware
+git clone https://github.com/felippetuma/MobiBus-Edge
+cd MobiBus-Edge/fiware
 ```
 
 O Mosquitto lê a configuração de `fiware/mosquitto/mosquitto.conf`. O compose monta esse arquivo em `/mosquitto/config/mosquitto.conf` (`fiware/docker-compose.yml:76`, caminho relativo à pasta do compose), então rode os comandos de dentro de `fiware/`. Sem o arquivo no lugar, o Docker cria uma pasta com esse nome e o broker não sobe.
