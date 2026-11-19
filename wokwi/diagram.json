@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-v1", "id": "esp", "top": 26.08, "left": 4.8, "attrs": {} },
+    { "type": "wokwi-breadboard-mini", "id": "bb1", "top": -212.6, "left": -40.8, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -440, "left": 0, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht2", "top": -440, "left": 125, "attrs": {} },
+    {
+      "type": "wokwi-text",
+      "id": "text2",
+      "top": -472,
+      "left": 0,
+      "attrs": { "text": "Sensor Interno" }
+    },
+    {
+      "type": "wokwi-text",
+      "id": "text1",
+      "top": -472,
+      "left": 125,
+      "attrs": { "text": "Sensor Motor" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -420,
+      "left": 232.2,
+      "attrs": { "volume": "0.1" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": -384.4,
+      "left": 333.2,
+      "rotate": 270,
+      "attrs": { "color": "red", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "bb1:17t.e", "red", [ "h23.5", "v0" ] ],
+    [ "esp:GND.1", "bb1:16b.j", "black", [ "h13.9", "v0" ] ],
+    [ "dht1:VCC", "bb1:17t.a", "red", [ "v80.1", "h125", "v0" ] ],
+    [ "dht1:SDA", "esp:D22", "green", [ "v73.1", "h124.5", "v0" ] ],
+    [ "dht1:GND", "bb1:16b.i", "black", [ "v66.1", "h114.2", "v0" ] ],
+    [ "dht2:VCC", "bb1:17t.b", "red", [ "v59.1", "h27", "v0" ] ],
+    [ "dht2:SDA", "esp:D21", "blue", [ "v52.1", "h26.5", "v0" ] ],
+    [ "dht2:GND", "bb1:16b.h", "black", [ "v45.1", "h16.2", "v0" ] ],
+    [ "bz1:1", "bb1:16b.g", "black", [ "v38.1", "h5", "v0" ] ],
+    [ "bz1:2", "esp:D19", "orange", [ "v31.1", "h4", "v0" ] ],
+    [ "btn1:1.l", "esp:D18", "yellow", [ "v24.1", "h8", "v0" ] ],
+    [ "btn1:2.l", "bb1:16b.f", "black", [ "v17.1", "h9", "v0" ] ]
+  ],
+  "dependencies": {}
+}
