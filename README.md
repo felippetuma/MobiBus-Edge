@@ -5,17 +5,18 @@ Firmware para ESP32 que monitora a temperatura interna e a do motor de um ônibu
 ## Sumário
 
 1. [Links do projeto](#links-do-projeto)
-2. [Arquitetura](#arquitetura)
-3. [Estrutura da pasta](#estrutura-da-pasta)
-4. [Hardware](#hardware)
-5. [Como rodar no Wokwi](#como-rodar-no-wokwi)
-6. [Configuração](#configuração)
-7. [Comportamento](#comportamento)
-8. [Integração FIWARE (MQTT)](#integração-fiware-mqtt)
-9. [Saída no Serial](#saída-no-serial)
-10. [Estrutura do código](#estrutura-do-código)
-11. [Limitações conhecidas](#limitações-conhecidas)
-12. [Pontos de melhoria](#pontos-de-melhoria)
+2. [Integrantes](#integrantes)
+3. [Arquitetura](#arquitetura)
+4. [Estrutura da pasta](#estrutura-da-pasta)
+5. [Hardware](#hardware)
+6. [Como rodar no Wokwi](#como-rodar-no-wokwi)
+7. [Configuração](#configuração)
+8. [Comportamento](#comportamento)
+9. [Integração FIWARE (MQTT)](#integração-fiware-mqtt)
+10. [Saída no Serial](#saída-no-serial)
+11. [Estrutura do código](#estrutura-do-código)
+12. [Limitações conhecidas](#limitações-conhecidas)
+13. [Pontos de melhoria](#pontos-de-melhoria)
 
 ## Links do projeto
 
@@ -26,6 +27,16 @@ Firmware para ESP32 que monitora a temperatura interna e a do motor de um ônibu
 | Vídeo no YouTube | [`Link do Video no Youtube`](https://youtu.be/duI55tUqWwA) |
 | Repositório do dashboard | [`Repositório do projeto MobiBus`](https://github.com/felippetuma/MobiBus-GS) |
 | FIWARE original (professor Fabio Cabrini), só como referência | [ `Repositório FIWARE original`](https://github.com/fabiocabrini/fiware) |
+
+## Integrantes
+
+| Nome Completo | RM's |
+| ------------- | ---- |
+| Davi Yuu Santos Toyota | 569557 |
+| Felipe Santana Motta | 570550 |
+| Felippe Tuma Costa | 569459 |
+| Renan Martins da Silva | 569549 |
+| Yan da Silva Lima | 572373 |
 
 ## Arquitetura
 
@@ -261,7 +272,3 @@ ALERTA: resolvido pelo sistema web
 - Alarme também para temperatura mínima.
 - Persistir `alertaAtivo` na memória não volátil.
 - Credenciais fora do código-fonte.
-
-## Documentação
-
-A pasta [docs/](docs/README.md) traz a documentação detalhada: visão geral, hardware, firmware, protocolo MQTT, manual de software, testes e limitações. O índice tem os campos para o link do Wokwi e para o repositório do dashboard.
